@@ -17,7 +17,11 @@ module.exports = function (obj) {
 
         if (file.isBuffer()) {
             let content = css_img_sprite(file.contents.toString(), {
-                cssSrc: file.path
+                cssDes: obj.cssDesDir,
+                imgDes: obj.imgDesDir,
+                cssSrc: file.path,
+                layout: obj.layout,
+                hash: obj.hash
             });
             file.contents = Buffer.from(content);
         }
