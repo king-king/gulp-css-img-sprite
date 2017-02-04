@@ -19,7 +19,7 @@ module.exports = function (obj) {
         if (file.isBuffer()) {
             try {
                 let content = css_img_sprite(file.contents.toString(), {
-                    cssDes: path.join(obj.cssDesDir, file.relative),
+                    cssDes: path.dirname(path.join(obj.cssDesDir, file.relative)),
                     imgDes: obj.imgDesDir,
                     cssSrc: file.path,
                     layout: obj.layout,

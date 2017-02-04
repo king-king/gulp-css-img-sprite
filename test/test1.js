@@ -6,7 +6,7 @@ let gulp = require("gulp");
 
 let outDir = "build";
 
-gulp.src("src/**/*css")
+gulp.src("css/**/*.css")
     .pipe(sprite({
         cssDesDir: outDir,
         imgDesDir: "result/img"
