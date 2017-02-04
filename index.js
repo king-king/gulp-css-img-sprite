@@ -1,5 +1,5 @@
 /**
- * Created by wangqun6 on 2017/1/17.
+ * Created by king-king on 2017/1/17.
  */
 
 var through = require('through2');

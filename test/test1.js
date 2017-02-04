@@ -1,5 +1,5 @@
 /**
- * Created by wangqun6 on 2017/2/4.
+ * Created by king-king on 2017/2/4.
  */
 var sprite = require('../index');
 var gulp = require("gulp");
