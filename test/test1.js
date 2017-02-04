@@ -1,14 +1,14 @@
 /**
  * Created by wangqun6 on 2017/2/4.
  */
-let sprite = require('../index');
-let gulp = require("gulp");
+var sprite = require('../index');
+var gulp = require("gulp");
 
-let outDir = "build";
+var outDir = "build";
 
 gulp.src("css/**/*.css")
     .pipe(sprite({
         cssDesDir: outDir,
-        imgDesDir: "result/img"
+        imgDesDir: "build/image"
     }))
     .pipe(gulp.dest(outDir));
