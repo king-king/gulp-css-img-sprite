@@ -1,0 +1,24 @@
+{
+  "name": "gulp-css-img-sprite",
+  "version": "1.0.0",
+  "description": "输入css文件，自动生成精灵图和新的css文件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/king-king/gulp-css-img-sprite.git"
+  },
+  "keywords": [
+    "gulpplugin",
+    "css",
+    "sprite"
+  ],
+  "author": "king-king",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/king-king/gulp-css-img-sprite/issues"
+  },
+  "homepage": "https://github.com/king-king/gulp-css-img-sprite#readme"
+}
