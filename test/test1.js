@@ -9,6 +9,7 @@ var outDir = "build";
 gulp.src("css/**/*.css")
     .pipe(sprite({
         cssDesDir: outDir,
-        imgDesDir: "build/image"
+        imgDesDir: "build/image",
+        hash: true
     }))
     .pipe(gulp.dest(outDir));
