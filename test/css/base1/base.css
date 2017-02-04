@@ -1,0 +1,22 @@
+.image1 {
+    width: 100px;
+    height: 30px;
+    filter: blur(10px);
+    transform: translate3d(0, 0, 0);
+    background: url("../../image/1.png?__spriter") 100px 0;
+    background-size: 100px auto;
+}
+
+.image2 {
+    width: 70px;
+    background: url("../../image/2.png?__spriter") 0 200px;
+    background-size: 70px auto;
+    height: 10px;
+}
+
+.image3 {
+    width: 70px;
+    background: url("../../image/3.png?__spriter") 0 200px;
+    background-size: 60px auto;
+    height: 10px;
+}
