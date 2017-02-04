@@ -20,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/king-king/gulp-css-img-sprite/issues"
   },
-  "homepage": "https://github.com/king-king/gulp-css-img-sprite#readme"
+  "homepage": "https://github.com/king-king/gulp-css-img-sprite#readme",
+  "dependencies": {
+    "gulp-util": "^3.0.8",
+    "images": "^3.0.0",
+    "through2": "^2.0.3"
+  }
 }
