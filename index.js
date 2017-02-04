@@ -17,14 +17,19 @@ module.exports = function (obj) {
         }
 
         if (file.isBuffer()) {
-            let content = css_img_sprite(file.contents.toString(), {
-                cssDes: path.join(obj.cssDesDir, file.relative),
-                imgDes: obj.imgDesDir,
-                cssSrc: file.path,
-                layout: obj.layout,
-                hash: obj.hash
-            });
-            file.contents = Buffer.from(content);
+            try {
+                let content = css_img_sprite(file.contents.toString(), {
+                    cssDes: path.join(obj.cssDesDir, file.relative),
+                    imgDes: obj.imgDesDir,
+                    cssSrc: file.path,
+                    layout: obj.layout,
+                    hash: obj.hash
+                });
+                file.contents = Buffer.from(content);
+            } catch (err) {
+                this.emit('error', new PluginError(pluginName, err.toString()));
+                return cb();
+            }
         }
 
         // make sure the file goes through the next gulp plugin
