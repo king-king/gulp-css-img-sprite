@@ -7,5 +7,8 @@ let gulp = require("gulp");
 let outDir = "build";
 
 gulp.src("src/**/*css")
-    .pipe(sprite())
+    .pipe(sprite({
+        cssDesDir: outDir,
+        imgDesDir: "result/img"
+    }))
     .pipe(gulp.dest(outDir));
