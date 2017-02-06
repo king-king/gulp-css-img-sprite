@@ -6,7 +6,7 @@ var through = require('through2');
 var gutil = require('gulp-util');
 var PluginError = gutil.PluginError;
 var pluginName = 'gulp-css-img-sprite';
-var css_img_sprite = require('./lib/css-img-sprite');
+var css_img_sprite = require('css-img-sprite');
 var path = require('path');
 
 module.exports = function (obj) {
@@ -18,7 +18,7 @@ module.exports = function (obj) {
 
         if (file.isBuffer()) {
             try {
-                var content = css_img_sprite(file.contents.toString(), {
+                var content = css_img_sprite.raw(file.contents.toString(), {
                     cssDes: path.dirname(path.join(obj.cssDesDir, file.relative)),
                     imgDes: obj.imgDesDir,
                     cssSrc: file.path,
