@@ -15,17 +15,15 @@ module.exports = function (obj) {
             this.emit('error', new PluginError(pluginName, 'Streams are not supported!'));
             return cb();
         }
-
         if (file.isBuffer()) {
             try {
-                var content = css_img_sprite.raw(file.contents.toString(), {
-                    cssDes: path.dirname(path.join(obj.cssDesDir, file.relative)),
-                    imgDes: obj.imgDesDir,
-                    cssSrc: file.path,
+                file.contents = css_img_sprite.raw(file.contents, {
+                    cssSrc: path.relative(file.cwd, file.path),
+                    cssDesDir: path.dirname(path.join(obj.cssDesDir, file.relative)),
+                    imgDesDir: obj.imgDesDir,
                     layout: obj.layout,
                     hash: obj.hash
                 });
-                file.contents = Buffer.from(content);
             } catch (err) {
                 this.emit('error', new PluginError(pluginName, err.toString()));
                 return cb();

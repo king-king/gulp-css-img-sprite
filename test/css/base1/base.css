@@ -1,22 +1,5 @@
-.image1 {
-    width: 100px;
-    height: 30px;
-    filter: blur(10px);
-    transform: translate3d(0, 0, 0);
-    background: url("../../image/1.png?__spriter") 100px 0;
-    background-size: 100px auto;
-}
+.image1 {width: 100px;height: 30px;filter: blur(10px);transform: translate3d(0, 0, 0);background-repeat: no-repeat;}
 
-.image2 {
-    width: 70px;
-    background: url("../../image/2.png?__spriter") 0 200px;
-    background-size: 70px auto;
-    height: 10px;
-}
+.image2 {width: 70px;height: 10px;background-repeat: no-repeat;}
 
-.image3 {
-    width: 70px;
-    background: url("../../image/3.png?__spriter") 0 200px;
-    background-size: 60px auto;
-    height: 10px;
-}
+.image3 {width: 70px;height: 10px;background-repeat: no-repeat;}.image1{background-position:100px 0px}.image2{background-position:-30px 167px}.image3{background-position:-40px 154px}.image1,.image2,.image3{background-image: url(../../build/image/base_5564d17949_z.png)}
