@@ -1,6 +1,6 @@
 {
   "name": "gulp-css-img-sprite",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "input css file and get new css file & sprite image",
   "main": "index.js",
   "scripts": {
