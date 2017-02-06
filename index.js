@@ -1,13 +1,13 @@
 /**
- * Created by wangqun6 on 2017/1/17.
+ * Created by king-king on 2017/1/17.
  */
 
-let through = require('through2');
-let gutil = require('gulp-util');
-let PluginError = gutil.PluginError;
-let pluginName = 'gulp-css-img-sprite';
-let css_img_sprite = require('./lib/css-img-sprite');
-let path = require('path');
+var through = require('through2');
+var gutil = require('gulp-util');
+var PluginError = gutil.PluginError;
+var pluginName = 'gulp-css-img-sprite';
+var css_img_sprite = require('./lib/css-img-sprite');
+var path = require('path');
 
 module.exports = function (obj) {
     return through.obj(function (file, encoding, cb) {
@@ -18,7 +18,7 @@ module.exports = function (obj) {
 
         if (file.isBuffer()) {
             try {
-                let content = css_img_sprite(file.contents.toString(), {
+                var content = css_img_sprite(file.contents.toString(), {
                     cssDes: path.dirname(path.join(obj.cssDesDir, file.relative)),
                     imgDes: obj.imgDesDir,
                     cssSrc: file.path,
