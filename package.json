@@ -1,6 +1,6 @@
 {
   "name": "gulp-css-img-sprite",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "input css file and get new css file & sprite image",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/king-king/gulp-css-img-sprite#readme",
   "dependencies": {
-    "css-img-sprite": "^1.0.11",
+    "css-img-sprite": "^1.0.13",
     "gulp-util": "^3.0.8",
     "through2": "^2.0.3"
   },

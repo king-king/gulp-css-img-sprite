@@ -1,3 +1,5 @@
+[update log](update-log.md)
+
 # Table
 1. [Install](#INSTALL)
 1. [Gulp Version](#Gulp_Version)
